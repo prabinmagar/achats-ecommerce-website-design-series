@@ -12,6 +12,8 @@ import ChangePassword from "./screens/auth/ChangePasswordScreen";
 import CheckMail from "./screens/auth/CheckMailScreen";
 import Verification from "./screens/auth/VerificationScreen";
 import NotFound from "./screens/error/NotFoundScreen";
+import ProductList from "./screens/product/ProductListScreen";
+import ProductDetails from "./screens/product/ProductDetailsScreen";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           {/* main screens */}
           <Route path="/" element={<BaseLayout />}>
             <Route index element={<Home />} />
+            <Route path="/product" element={<ProductList />} />
+            <Route path="/product/details" element={<ProductDetails />} />
           </Route>
 
           {/* auth screens */}
