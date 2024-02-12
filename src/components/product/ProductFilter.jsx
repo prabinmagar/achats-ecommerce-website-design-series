@@ -260,7 +260,7 @@ const ProductFilter = () => {
             <i className="bi bi-chevron-up"></i>
           </span>
         </FilterTitle>
-        <FilterWrap className={`${isSizeFilterOpen ? "hide" : "show"}`}>
+        <FilterWrap className={`${!isSizeFilterOpen ? "hide" : "show"}`}>
           <div className="sizes-list grid text-center justify-center">
             <div className="sizes-item text-sm font-semibold text-outerspace w-full">
               <input type="checkbox" />
