@@ -14,6 +14,8 @@ import Verification from "./screens/auth/VerificationScreen";
 import NotFound from "./screens/error/NotFoundScreen";
 import ProductList from "./screens/product/ProductListScreen";
 import ProductDetails from "./screens/product/ProductDetailsScreen";
+import Cart from "./screens/cart/CartScreen";
+import CartEmpty from "./screens/cart/CartEmptyScreen";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/product" element={<ProductList />} />
             <Route path="/product/details" element={<ProductDetails />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/empty_cart" element={<CartEmpty />} />
           </Route>
 
           {/* auth screens */}
