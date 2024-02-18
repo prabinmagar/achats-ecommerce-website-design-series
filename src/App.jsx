@@ -16,6 +16,9 @@ import ProductList from "./screens/product/ProductListScreen";
 import ProductDetails from "./screens/product/ProductDetailsScreen";
 import Cart from "./screens/cart/CartScreen";
 import CartEmpty from "./screens/cart/CartEmptyScreen";
+import Checkout from "./screens/checkout/CheckoutScreen";
+import Order from "./screens/user/OrderListScreen";
+import OrderDetail from "./screens/user/OrderDetailScreen";
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
             <Route path="/product/details" element={<ProductDetails />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/empty_cart" element={<CartEmpty />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/order" element={<Order />} />
+            <Route path = "/order_detail" element = {<OrderDetail />} />
           </Route>
 
           {/* auth screens */}
