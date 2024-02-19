@@ -19,6 +19,9 @@ import CartEmpty from "./screens/cart/CartEmptyScreen";
 import Checkout from "./screens/checkout/CheckoutScreen";
 import Order from "./screens/user/OrderListScreen";
 import OrderDetail from "./screens/user/OrderDetailScreen";
+import WishList from "./screens/user/WishListScreen";
+import WishListEmpty from "./screens/user/WishListEmptyScreen";
+import Confirm from "./screens/user/ConfirmScreen";
 
 function App() {
   return (
@@ -35,7 +38,10 @@ function App() {
             <Route path="/empty_cart" element={<CartEmpty />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/order" element={<Order />} />
-            <Route path = "/order_detail" element = {<OrderDetail />} />
+            <Route path="/order_detail" element={<OrderDetail />} />
+            <Route path="/wishlist" element={<WishList />} />
+            <Route path="/empty_wishlist" element={<WishListEmpty />} />
+            <Route path="/confirm" element={<Confirm />} />
           </Route>
 
           {/* auth screens */}
