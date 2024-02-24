@@ -22,6 +22,8 @@ import OrderDetail from "./screens/user/OrderDetailScreen";
 import WishList from "./screens/user/WishListScreen";
 import WishListEmpty from "./screens/user/WishListEmptyScreen";
 import Confirm from "./screens/user/ConfirmScreen";
+import Account from "./screens/user/AccountScreen";
+import Address from "./screens/user/AddressScreen";
 
 function App() {
   return (
@@ -42,6 +44,8 @@ function App() {
             <Route path="/wishlist" element={<WishList />} />
             <Route path="/empty_wishlist" element={<WishListEmpty />} />
             <Route path="/confirm" element={<Confirm />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/account/add" element={<Address />} />
           </Route>
 
           {/* auth screens */}
